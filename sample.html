@@ -1,0 +1,23 @@
+<script>
+
+	name = "山本　太郎";
+	document.write("元の文字：" +name +"<BR><BR>");
+//	nameArray = name.split("　");
+	nameArray = name.split(/\s+/);
+	document.write(nameArray[0] + "家の" + nameArray[1] + "さん");
+
+/*
+ document.writeは最新のブラウザなどでは非推奨のメソッドとなりますので、
+ 文字列を配置したい要素を取得し、そこに文字列を設定する方法などがあります。
+ 
+ 例）
+     [HTML側]
+     <p id="output1"></p>
+
+     [JavaScript側]
+     document.getElementById(“output1”).innerHTML = “出力させる文章”;
+     
+*/
+
+
+</script>
